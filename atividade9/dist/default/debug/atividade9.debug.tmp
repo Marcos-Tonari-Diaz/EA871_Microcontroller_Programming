@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>/home/marcos/Documents/6SEM/EA871/atividade9</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>/opt/microchip/mplabx/v5.40/packs/Microchip/ATmega_DFP/2.2.108/avrasm/inc</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>atividade9.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>/opt/microchip/mplabx/v5.40/packs/Microchip/ATmega_DFP/2.2.108/avrasm/inc/m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>dist/default/debug/atividade9.debug.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>atividade9.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>dist/default/debug/atividade9.debug.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>atividade9.asm</FILE><LINE>7</LINE></main>
+  <rsi><FILE>atividade9.asm</FILE><LINE>64</LINE></rsi>
+  <led_on><FILE>atividade9.asm</FILE><LINE>191</LINE></led_on>
+  <led_loop><FILE>atividade9.asm</FILE><LINE>38</LINE></led_loop>
+  <timer_loop><FILE>atividade9.asm</FILE><LINE>130</LINE></timer_loop>
+  <desliga_led><FILE>atividade9.asm</FILE><LINE>56</LINE></desliga_led>
+  <liga_led><FILE>atividade9.asm</FILE><LINE>51</LINE></liga_led>
+  <fim_comparacao><FILE>atividade9.asm</FILE><LINE>60</LINE></fim_comparacao>
+  <fim_rsi><FILE>atividade9.asm</FILE><LINE>107</LINE></fim_rsi>
+  <mid_loop><FILE>atividade9.asm</FILE><LINE>140</LINE></mid_loop>
+  <top_a><FILE>atividade9.asm</FILE><LINE>174</LINE></top_a>
+  <top_b><FILE>atividade9.asm</FILE><LINE>183</LINE></top_b>
+  <top_c><FILE>atividade9.asm</FILE><LINE>187</LINE></top_c>
+ </LABELS>
+</ASSEMBLER_INFO>

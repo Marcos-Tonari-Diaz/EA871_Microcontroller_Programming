@@ -1,0 +1,20 @@
+.org 0x0000 ; o programa comeca no endereco 0x0000 (de palavra) da memoria de programa, que corresponde ao
+jmp main ; salto para evitar a regiao da memoria onde ficam armazenados os vetores de interrupcao
+.org 0x0034 ; primeiro endereco (de palavra) livre fora da faixa reservada para os vetores de interrupcao
+main:
+    sbi 0x07,0 ; configura o pino A0 como saida
+    cbi 0x0A,7 ; configura o pino 7 como entrada
+    cbi 0x08,0 ; apaga o LED inicialmente
+loop:
+    in r16,0x09 ; le estado do botao
+    andi r16,0x80 ; aplica mascara para isolar o bit de interesse
+    brbs 1,liga_led ; desvia de acordo com o estado do botao
+    cbi 0x08,0 ; apaga o LED
+    rjmp loop
+
+liga_led:
+    sbi 0x08,0 ; acende o LED
+    rjmp loop
+
+
+
